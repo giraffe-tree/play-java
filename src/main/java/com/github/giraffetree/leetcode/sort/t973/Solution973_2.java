@@ -7,6 +7,7 @@ import java.util.concurrent.ThreadLocalRandom;
  * @author GiraffeTree
  * @date 2019-01-15
  */
+@SuppressWarnings("ALL")
 public class Solution973_2 {
 
     /**

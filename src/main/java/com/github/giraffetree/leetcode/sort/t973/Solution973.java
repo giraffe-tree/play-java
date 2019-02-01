@@ -13,6 +13,7 @@ public class Solution973 {
 
     /**
      * 使用最大堆
+     * 时间复杂度 O(N+K)
      */
     public int[][] kClosest(int[][] points, int K) {
         PriorityQueue<Point> heap = new PriorityQueue<>(K);
@@ -20,12 +21,13 @@ public class Solution973 {
         if (K >= length) {
             return points;
         }
-        for (int i = 0; i <length; i++) {
+        for (int i = 0; i < length; i++) {
             if (heap.size() < K) {
                 heap.add(new Point(points[i]));
             } else {
                 Point peek = heap.peek();
                 Point point = new Point(points[i]);
+                assert peek != null;
                 if (peek.sum > point.sum) {
                     heap.poll();
                     heap.add(point);

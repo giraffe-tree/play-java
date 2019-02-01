@@ -22,6 +22,20 @@
             <version>27.0-jre</version>
         </dependency>
 
+        <!-- flink -->
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-clients_2.11</artifactId>
+            <version>1.6.1</version>
+        </dependency>
+
+        <!-- netty -->
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>4.1.31.Final</version>
+        </dependency>
+
     </dependencies>
 
 </project>

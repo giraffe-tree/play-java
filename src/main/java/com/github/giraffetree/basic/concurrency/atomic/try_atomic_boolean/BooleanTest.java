@@ -5,7 +5,7 @@ import java.util.concurrent.ExecutorService;
 
 /**
  * @author: GiraffeTree
- * @date: 2018/10/31 0031
+ * @date: 2018/10/31
  */
 public class BooleanTest {
 
